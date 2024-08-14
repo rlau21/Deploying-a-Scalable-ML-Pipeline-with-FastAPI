@@ -36,3 +36,5 @@ r = requests.post('http://127.0.0.1:8000/data', data = json.dumps(data)) # post 
 print('Status Code Value:', r.status_code)
 # TODO: print the result
 print(r.json())
+
+#adding comment for gitaction testing
