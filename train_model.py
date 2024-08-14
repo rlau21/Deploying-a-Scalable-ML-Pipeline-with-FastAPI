@@ -55,7 +55,7 @@ X_test, y_test, _, _ = process_data(
 )
 
 # TODO: use the train_model function to train the model on the training dataset
-model = # your code here
+model = train_model(X_train, y_train) # your code here, train model function
 
 # save the model and the encoder
 model_path = os.path.join(project_path, "model", "model.pkl")
