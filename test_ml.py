@@ -2,11 +2,15 @@ import pytest
 # TODO: add necessary import
 
 # TODO: implement the first test. Change the function name and input as needed
-def test_one():
+def test_rowcounts():
     """
-    # add description for the first test
+    confirm the data has more than 1000 rows after 30% slice
     """
     # Your code here
+    data_path = './data/census.csv'
+    data = pd.read_csv(data_path)
+    train, test = train_test_split(data, test_size = .3)
+    assert len(test) >= 1000
     pass
 
 
