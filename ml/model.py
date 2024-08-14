@@ -20,6 +20,10 @@ def train_model(X_train, y_train):
         Trained machine learning model.
     """
    # TODO: implement the function
+   model_lau = RandomForestClassifier(n_estimators=100, random_state=42) #initialize
+   model_lau.fit(X_train, y_train) #train
+   return model_lau #return
+
     pass
 
 
