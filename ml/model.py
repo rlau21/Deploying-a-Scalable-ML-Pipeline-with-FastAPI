@@ -136,7 +136,7 @@ def performance_on_categorical_slice(
         # your code here
         # for input data, use data in column given as "column_name", with the slice_value 
         # use training = False
-        data_slice, #dataframe
+        data=data_slice, #dataframe
         categorical_features=categorical_features,  #features
         label=label,
         training = False,
