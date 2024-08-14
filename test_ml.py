@@ -4,22 +4,25 @@ import pytest
 # TODO: implement the first test. Change the function name and input as needed
 def test_rowcounts():
     """
-    confirm the data has more than 1000 rows after 30% slice
+    confirm the census data has more than 1000 rows after 30% slice
     """
     # Your code here
-    data_path = './data/census.csv'
-    data = pd.read_csv(data_path)
-    train, test = train_test_split(data, test_size = .3)
-    assert len(test) >= 1000
+    data_path = './data/census.csv' #census path
+    data = pd.read_csv(data_path) #read the file
+    train, test = train_test_split(data, test_size = .3) #split into 30%
+    assert len(test) >= 1000 #check rowcounts of test
     pass
 
 
 # TODO: implement the second test. Change the function name and input as needed
 def test_two():
     """
-    # add description for the second test
+    confirm the model is the RF classifier
     """
-    # Your code here
+    fake_x = [[1,2,3], [4,5,6]] #fake values for testing
+    fake_y = ['low', 'high']
+    model = train_model(fake_x, fake_y) #pull the train model
+    assert type(model) == type(RandomForestClassifier) #assert the type is RFC
     pass
 
 
