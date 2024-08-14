@@ -65,6 +65,7 @@ def inference(model, X):
     """
     # TODO: implement the function
     preds = model.predict(X) #predictions
+    return preds
 
     pass
 
