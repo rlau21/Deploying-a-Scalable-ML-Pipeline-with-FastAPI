@@ -20,14 +20,30 @@ def test_rowcounts():
 
 
 # TODO: implement the second test. Change the function name and input as needed
-def test_rfclass():
+def test_featurecheck():
     """
-    confirm the model is the RF classifier
+    ensure that all the features are present
     """
-    fake_x = [[1,2,3], [4,5,6]] #fake values for testing
-    fake_y = ['low', 'high']
-    model = train_model(fake_x, fake_y) #pull the train model
-    assert type(model) == type(RandomForestClassifier) #assert the type is RFC
+    data_path = './data/census.csv' #census path
+    data = pd.read_csv(data_path) #read the file
+
+    features = {
+        'age',
+        'workclass',
+        'fnlgt',
+        'education',
+        'education-num',
+        'marital-status',
+        'occupation',
+        'relationship',
+        'race',
+        'sex',
+        'capital-gain',
+        'capital-loss',
+        'hours-per-week',
+        'native-country',
+        'salary'
+    }
     pass
 
 
