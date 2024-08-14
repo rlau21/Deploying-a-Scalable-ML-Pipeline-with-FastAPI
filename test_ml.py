@@ -15,7 +15,7 @@ def test_rowcounts():
 
 
 # TODO: implement the second test. Change the function name and input as needed
-def test_two():
+def test_rfclass():
     """
     confirm the model is the RF classifier
     """
@@ -27,9 +27,12 @@ def test_two():
 
 
 # TODO: implement the third test. Change the function name and input as needed
-def test_three():
+def test_censuspopulated():
     """
-    # add description for the third test
+    validating that the census data is not blank or empyt
     """
-    # Your code here
+    data_path = './data/census.csv' #census path
+    data = pd.read_csv(data_path) #read the file
+    assert not data.empty
+    assert data.shape[0] > 0 # more than 0 rows
     pass
