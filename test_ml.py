@@ -4,6 +4,7 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from ml.model import train_model
 from sklearn.ensemble import RandomForestClassifier
+import os
 
 # TODO: implement the first test. Change the function name and input as needed
 def test_rowcounts():
