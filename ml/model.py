@@ -21,9 +21,9 @@ def train_model(X_train, y_train):
     """
    # TODO: implement the function
 
-   model = RandomForestClassifier(n_estimators=100, random_state=50) #initialize
+    model = RandomForestClassifier(n_estimators=100, random_state=50) #initialize
     model.fit(X_train, y_train) #train
-   return model #return
+    return model #return
 
     pass
 
