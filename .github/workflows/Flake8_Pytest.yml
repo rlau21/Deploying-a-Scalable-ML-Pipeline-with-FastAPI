@@ -21,3 +21,6 @@ jobs:
     - name: Analysing the code with flake8
       run: |
         flake8 --extend-ignore=E,F,W
+    - name: Analysing the code with pytest
+      run: |
+        pytest 
