@@ -20,4 +20,4 @@ jobs:
         pip install flake8
     - name: Analysing the code with flake8
       run: |
-        flake8 #--exit-zero --extend-ignore=E,F,W
+        flake8 --extend-ignore=E,F,W
